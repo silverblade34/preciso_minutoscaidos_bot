@@ -31,7 +31,7 @@ class ResponseBot:
         headers = {
             'Content-Type' : 'application/json'
         }
-        result = requests.post("http://127.0.0.1:3222/api/v1/rides_per_route", data = json.dumps(data), headers= headers)
+        result = requests.post("http://67.207.87.64:3222/api/v1/rides_per_route", data = json.dumps(data), headers= headers)
         resp = result.json()
         return resp
     
